@@ -1,0 +1,78 @@
+/* 
+ div{
+    border: 1px;
+   
+   
+}
+
+h2{
+    color: red;
+}
+
+.par2{
+    background-color: purple;
+}
+
+#par3{
+    background-color: green;
+}
+.date{
+    /* I used this to specifically target something within the third paragraph */
+    /* color: aqua;
+}
+.testClass{
+    background-color: brown;
+}
+aside#testingSpecificity{
+    background-color: black
+}  */
+
+/* div div a{
+    font-size: x-large;
+} */
+
+/* child selector */
+/* div.divone>p{
+    color: red;
+} */
+
+/* Adjacent Sibling selctors */
+/* div+p{
+    color: red;
+} */
+
+/* General sibling selectors */
+/* h1~p{
+    color: red;
+} */
+
+/* Attribute selectors */
+/* This is basically selecting paragraph elements with attributes of id defined */
+/* p[id]{
+    background-color: red;
+} */
+
+
+/* When we use the ~ character we are basically telling it to check if this
+ word exists in the value of the attribute separted by a space */
+
+/* p[class~="two"]{
+    background-color: red;
+} */
+
+/* p[class~="three"]{
+    color: green;
+} */
+
+/* When we use the ^ character we are telling it to check values for the attribute that start with
+what we are specifying */
+
+/* p[class^="o"]{
+    color: red;
+} */
+
+/* $ character checks anything that ends with $ */
+/* 
+p[class$="o"]{
+    color: red;
+} */

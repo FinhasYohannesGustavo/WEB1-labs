@@ -1,0 +1,123 @@
+/* div  :nth-child(odd){
+    background: pink
+    ;
+}
+
+div  :nth-child(even){
+    background: red
+    ;
+} */
+
+/* div :nth-child(2n+3){
+    background-color: gold;
+} */
+
+/* p:nth-last-child(-n+3){
+    background-color: blue;
+}
+
+p:nth-child(-n+4){
+    background-color: blue;
+} */
+
+/* p :nth-child(p:nth-last-child(-n+3)){
+    background-color: gold;
+} */
+
+/* p:nth-child(n+4):nth-last-child(n+3){
+    background-color: gold;
+    background-color: red;
+    /* This is the cascaderule in which the last element is the one affecting the style */
+
+   
+/* h2{
+    color: red;
+} */
+
+/* div h2{
+    color: red;
+} */
+
+/* #one{
+    color: red;
+} */
+
+/* .one{
+    color: red;
+} */
+
+/* div>h2{
+    color: red;
+} */
+
+ /* h2[class="one"]{
+    color: red;
+} */
+
+
+
+/* h2[id="one"]{
+    color: red;
+} */
+
+ /* h2[id^="o"]{
+    color: red;
+}  */
+
+/* h2[id$="e"]{
+    color: red;
+}  */
+
+/* div #one{
+    color: red;
+} */
+
+
+/* div .one{
+    color: red;
+} */
+
+/* h2#one{
+    color: red;
+} */
+
+/* Specificity is one way of handling conflicts. The css code with the highest
+specificity number is the one that will be applied.
+h2 (by element) has Selector Specificity number = 1
+.h2 (by class) has Selector Specificity number = 10
+#h2 (by id) has Selector Specificity number = 100
+You can use the key word !important to manually assign a code the priority. 
+
+To handle conflicts (and also as a good designing principle):
+1. Plan Ahead
+2. Always use Inheritence first for basic designs in a div or table tag
+3. Use Specifity with Elements and Classes (without ID) */
+/* This is how you choose the google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+h2{
+    color: red;
+    text-align: center;
+    text-decoration :underline 10px #333;
+    text-shadow: 4px -4px 8px red;
+    text-transform:uppercase;
+    font-variant:small-caps;
+    writing-mode: sideways-rl;
+    font-family:Agbalumo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
+
+    font-fam
+}
+
+.two{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 0.3in;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    direction: rtl;
+    font-size: 20 px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+

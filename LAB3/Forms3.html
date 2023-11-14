@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Form3</title>
+</head>
+<body>
+   <form action="" >
+    
+    
+        <table>
+            <tr>
+                <td>
+                    <label for="fname"> First Name</label>
+                </td>
+                <td>
+                    <!-- use the disabled attribute to disable the text box -->
+                    <input type="text" name = "fname" id = "fname"  list="names" placeholder="Enter your first name" size="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname"> Last Name</label> 
+                </td>
+                <td>
+                    <!-- Name and ID have the following importance
+                        1. To uniquely identify the value inputted
+                        2. Useful for styles
+                        3. To connet label with input (by giving the label and the input the same name) -->
+                    <input type="text" autofocus name = "lname" id = "lname" maxlength="10" placeholder="Enter your last name" size="100">
+                </td>
+            </tr>
+
+           
+
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name = "email" id = "email" size="30" placeholder="Must Contain @" size="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tel" name="'tel">Mobile</label>
+                </td>
+                <td>
+                    <input type="tel" name = 'tel'
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    maxlength="10"
+                    placeholder="only 10 digits are allowed"
+                    id = "tel" size="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="radio">Gender:</label>
+                </td>
+                <td>
+                    <ol>
+                        Male<input type="radio" name = "Gender" id = "Gender" value = "Male">
+                      
+                        Female<input checked type="radio" name = "Gender" id = "Gender" value = "Female">
+                    </ol>
+                   
+                </td>
+            
+         
+
+            <tr>
+                <td>
+                    <label for="date">Date of birth</label>
+                </td>
+                <td >
+                    <input type="date"
+                                    
+                    name = "date" id = "date" size="100px">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Adress">Adress</label>
+                </td>
+
+                <td>
+    
+                    <textarea name="Adress" id = "Adress" cols="100" rows="10"></textarea >
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city"> City</label> 
+                </td>
+                <td>
+                    <!-- Name and ID have the following importance
+                        1. To uniquely identify the value inputted
+                        2. Useful for styles
+                        3. To connet label with input (by giving the label and the input the same name) -->
+                    <input type="text" autofocus name = "city" id = "city" maxlength="10" size="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="area pin"> Area Pin</label> 
+                </td>
+                <td>
+                    <!-- Name and ID have the following importance
+                        1. To uniquely identify the value inputted
+                        2. Useful for styles
+                        3. To connet label with input (by giving the label and the input the same name) -->
+                    <input type="text" autofocus name = "area pin" id = "area pin" maxlength="10" size="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="state "> State</label> 
+                </td>
+                <td>
+                    <!-- Name and ID have the following importance
+                        1. To uniquely identify the value inputted
+                        2. Useful for styles
+                        3. To connet label with input (by giving the label and the input the same name) -->
+                    <input type="text" autofocus name = "state" id = "state" size="100">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="qualifications">Qualifications</label>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="" label="select qualifications"></option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="checkbox">Specifications</label>
+                </td>
+                <td>
+                <ul>
+                   <input type="checkbox" name = "drink" id = "drink" value = "Coffee">Computer Science</li> 
+                   <br>
+                   <input checked type="checkbox" name = "drink" id = "drink" value = "milk">Information Technology
+                   <br> 
+                   <input type="checkbox" name = "drink" id = "drink" value = "tea">Tele communications</li> 
+                </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pass">Password</label>
+                </td>
+                <td>
+                    <input type="password" id = "pass" required size="100">
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button color="green"><font color="green">register</font></button>
+                </td>
+                <td>
+                    <input type="hidden" name="hidden" value="1234455">
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

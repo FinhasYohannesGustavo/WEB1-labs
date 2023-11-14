@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+            <table>
+                <tr>
+                    <td>
+                        <label for="fname"> First Name</label>
+                    </td>
+                    <td>
+                        <!-- use the disabled attribute to disable the text box -->
+                        <input type="text" name = "fname" id = "fname"  list="names">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname"> Last Name</label> 
+                    </td>
+                    <td>
+                        <!-- Name and ID have the following importance
+                            1. To uniquely identify the value inputted
+                            2. Useful for styles
+                            3. To connet label with input (by giving the label and the input the same name) -->
+                        <input type="text" autofocus name = "lname" id = "lname" maxlength="10" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="course">Course:</label>
+                    </td>
+                
+                    <td>
+                        <select name="course" id = "course" > 
+                            <option value="English">English</option>
+                            <option selected value="Math">Maths</option>
+                            <option selected value="Physics">Physics</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="radio">Gender:</label>
+                    </td>
+                
+                </tr>
+                <tr align="left">
+                    <td>
+                        <ol>
+                            Male<input type="radio" name = "Gender" id = "Gender" value = "Male">
+                            <br>
+                            Female<input checked type="radio" name = "Gender" id = "Gender" value = "Female">
+                            <br>
+                            Other<input type="radio" name = "Gender" id = "Gender" value = "other">
+                        </ol>
+                       
+                    </td>
+                </tr>
+
+                <tr align="left">
+                    <td>
+                        <label for="checkbox">Hobbies:</label>
+                    </td>
+                   
+                </tr>
+                <tr>
+                    <td align="left">
+                        <ul>
+                           Programming<input type="checkbox" name = "Hobbies:" id = "Hobbies:" value = "Programming">
+                                    <br> 
+                           Cricket<input checked type="checkbox" name = "Hobbies:" id = "Hobbies:" value = "Cricket"> 
+                                    <br>
+                           Football<input type="checkbox" name = "Hobbies:" id = "Hobbies:" value = "Football">
+                        </ul>
+                        </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tel" name="'tel"> Telephone number</label>
+                    </td>
+                    <td>
+                        <input type="tel" name = 'tel'
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="xxx-xxx-xxxx"
+                        id = "tel">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="Adress">Adress</label>
+                    </td>
+                    
+                </tr>
+                <tr >
+                    <td>
+        
+                        <textarea name="Adress" id = "Adress" cols="30" rows="10"></textarea width="100%">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" name = "email" id = "email" size="30">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" id = "pass" required>
+                    </td>
+                </tr>
+
+                
+        </table>
+    
+</body>
+</html>

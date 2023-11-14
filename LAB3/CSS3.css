@@ -95,7 +95,7 @@ To handle conflicts (and also as a good designing principle):
 /* This is how you choose the google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
-h2{
+/* h2{
     color: red;
     text-align: center;
     text-decoration :underline 10px #333;
@@ -105,7 +105,7 @@ h2{
     writing-mode: sideways-rl;
     font-family:Agbalumo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
 
-    font-fam
+  
 }
 
 .two{
@@ -118,6 +118,30 @@ h2{
     font-size: 20 px;
     font-weight: 900;
     font-style: italic;
+} */
+/* Dynamic PC selectors */
+/* h2#one:hover{
+   text-decoration: line-through;
+   color: red;
 }
+
+p:hover{
+    color: green;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    text-shadow: 0cqmin;
+    text-decoration: solid;
+    color: gold;
+    size: 0cqmax;
+} */
+
+
+/* Structural PC selectors */
+ */
 
 

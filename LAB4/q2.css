@@ -1,0 +1,11 @@
+/* div div p{
+    background-color: green;
+} */
+
+/* div div>p{
+    background-color: green;
+} */
+
+.div2>p{
+    background-color: green;
+}

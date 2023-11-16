@@ -142,6 +142,67 @@ a:hover{
 
 
 /* Structural PC selectors */
- */
+/* Allows us to have more complex structural definitions on how the content
+looks rather that using the DOM */
+
+/* the below checks all the paragraph element and if it is the first child
+of its parent it will give it this styling */
+/* 
+p:first-child{
+    color: purple;
+} */
+
+/* This is one is similar to the above but makes sure that it is the first of type
+child for its parent */
+
+/* p:first-of-type{
+    color: magenta;
+} */
+
+/* p:last-child{
+    color: red;
+} */
+
+
+/* h1:only-child{
+    color: red;
+} */
+
+/* h1:only-of-type{
+    color: red;
+} */
+
+/* h1:first-of-type{
+    color: green;
+} */
+
+/* This targets every third child starting from the second child */
+/* The 2 is called the offset */
+/* p:nth-child(3n+3){
+    color: red;
+} */
+
+/* This means you start from the last child and go up 4 spots including last child
+and since -2n is negative it will have effect in the opposite manner
+that it was supposed to go meaning it will start going down instead of up */
+/* p:nth-last-child(-2n+4){
+    color: red;
+} */
+
+/* this targets the last three paragraphs */
+/* p:nth-last-child(-n+3){
+    color: red;
+} */
+
+
+
+
+p:nth-last-child(n+5){
+    color: red;
+} 
+
+p:nth-child(n+8){
+    color: red;
+}
 
 

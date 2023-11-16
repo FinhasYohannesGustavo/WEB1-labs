@@ -1,0 +1,52 @@
+span:nth-child(2n+1){
+    color: Red;
+    font-size: x-large;
+}
+
+
+.table1 table tr:nth-child(3n+2){
+    background-color: green;
+}
+
+.table2 table tr:nth-child(-n+3){
+    background-color: green;
+}
+
+.table2 table tr:nth-last-of-type(-n+3){
+    background-color: green;
+}
+
+
+
+
+/* .table3 table tr{
+    background-color: green;
+}
+
+.table3 table tr:nth-child(-n+3){
+    background-color: white;
+}
+
+.table3 table tr:nth-last-of-type(-n+3){
+    background-color: white;
+} */
+
+.table3 table tr:nth-last-child(n+4):nth-child(n+4){
+    background-color: green;
+}
+
+.heading1{
+    color: green;
+}
+
+.dynamic:hover{
+    background-color: green;
+}
+.dynamic{
+    font-size: xx-large;
+    width: max-content;
+    
+    background-color: gold;
+    text-align: center;
+}
+

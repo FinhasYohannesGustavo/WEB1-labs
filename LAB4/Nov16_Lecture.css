@@ -1,0 +1,78 @@
+/* body{
+    background-color: red;
+    background-image: url('African\ Fusion.jpeg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position: center;
+    background-position: 50% 50%;
+    background-position: top center;
+    background-size: 200px 400px;
+
+    It stretches the image to the whole screen
+    keeping the original aspect ratio. Cover never repeats the image because
+    it stretches across the whole screen
+    background-size: cover;
+    background-size: contain;
+    background-blend-mode: difference;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+} */
+
+/* h1{
+    background-color: red;
+    font-size: 70px;
+    background-image: url("sara.jpg");
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+} */
+
+/* Box Model
+        It is what makes and breaks a good design in CSS 
+        It basically says in every page that all elements are rectangular boxes
+        It is advisable to provide borders to every element in our html
+        */
+
+h1{
+    border:20px dashed red;
+    border-left:20px solid purple;
+    border-right:20px solid green;
+}
+img{
+    /* border: 10px outset #333;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 4px 4px 8px #333; */
+    background-size: 100px 100px;
+    border-radius: 50%;
+    box-shadow: 20px 80px 40px black;
+}
+
+div.main{
+
+    border:10px solid red;
+    margin: 10px;
+    /* padding: 40px; */
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    overflow: auto;
+}
+
+*{
+    /* This alters the width of the content */
+    box-sizing: border-box;
+}
+
+/* The space between the content and the border is Padding
+The space outside the border is Margin
+    Do not make the mistake of assuming a space outside an element is not a 
+    part of it when using MARGIN.
+    Total Width of an Element = LeftPadding + Right Padding + Left Margin + 
+    Right Margin + Left Border + Right Border + Width of the Content
+*/

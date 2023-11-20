@@ -2,7 +2,6 @@
  div{
     border: 1px;
    
-   
 }
 
 h2{
@@ -76,3 +75,21 @@ what we are specifying */
 p[class$="o"]{
     color: red;
 } */
+
+/* Testing out width and height */
+
+#div2{
+    /* The below is absolute values and does not sc ale well for smaller
+    screens */
+  /* width: 10px;   */
+
+  /* The below is relative values and is great for smaller device screens */
+  /* font-size: 1em; */
+  background-color: red;
+  width: 100vmin;
+  
+
+  /* Using shorthand you can define multiple font attributes */
+  font: 100%/1.5 Georgia, "Times New Roman", Times, serif;
+
+}

@@ -95,7 +95,7 @@ To handle conflicts (and also as a good designing principle):
 /* This is how you choose the google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 
-/* h2{
+ h2{
     color: red;
     text-align: center;
     text-decoration :underline 10px #333;
@@ -118,7 +118,7 @@ To handle conflicts (and also as a good designing principle):
     font-size: 20 px;
     font-weight: 900;
     font-style: italic;
-} */
+} 
 /* Dynamic PC selectors */
 /* h2#one:hover{
    text-decoration: line-through;
@@ -196,13 +196,103 @@ that it was supposed to go meaning it will start going down instead of up */
 
 
 
-
-p:nth-last-child(n+5){
+/* p:nth-last-child(n+5){
     color: red;
 } 
 
 p:nth-child(n+8){
     color: red;
+} */
+
+
+/* Pseudo elements allow us even greater capabilites like targeting the first line of pargraphs 
+or the first letters of paragraphs*/
+
+/* #pseudoElements p::first-line{
+    font-family: Agbalumo;
+    writing-mode: sideways-rl;
 }
 
+#pseudoElements p::first-letter{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+   
+}
+
+#div p::before{
+    content: "Before ";
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+}
+
+#div p::after{
+    content: "After";
+    color: red;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#div p a::after{
+    content: attr(href);
+} */
+ 
+/* Inheritence allows text and appearance to be inherited
+by the child elements but not box appearances like padding, margin and borders*/
+
+/* Note that even though inheritance works here the more specific the selector
+it will override the parent properties if only there is overlap if there is no overlap
+we have a cumulitive effect of the parent style + the child style being applied */
+/* #name{
+     color: red; 
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+} */
+
+/* #div{
+    color: green;
+    font-size: xx-large;
+} */
+
+/* .spanner{
+    color: peru;
+}
+#pseudoElements p{
+    color: blue;
+} */
+/* !!Note that eventhough this class definition is done within the paragraph it will not be applied
+because the above selector has a higher specificity and also both the above and below are pointing to the same thing*/
+
+/* #par{
+    color: red;
+} */
+
+/* span#name{
+    color:blueviolet ;
+} */
+
+/* Note that using the important keyword will always overide everything else
+unless there is a higher specificity also using the important keyword
+it is not recommended that you use the important keyword */
+/* span{
+    color: red !important;
+} */
+
+
+p{
+    color: blue;
+}
+
+
+/* p#par{
+    color: gold;
+    background-color: green;
+} */
+#pseudoElements{
+    color: red;
+}
+span{
+    color: blueviolet;
+}
 

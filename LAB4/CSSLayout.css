@@ -1,0 +1,232 @@
+/* CSS Layout
+    1. CSS Position
+        - The parameters used are 'left, right, bottom, top'
+        a. position:static
+        b. position:relative 
+            - It begins where the position:static begins and allows the user control
+        c. position:absolute
+            i. If there is no relative parent, it starts from the top of the page
+            ii. If there is relative parent, it starts from the top of the relative parent
+        d. position:fixed
+            - It allows the element to be fixed on a particular place that won't be affected by scrolling.
+    - 'z-index' paremeter allows us to control what goes on 
+    2. CSS Float
+        Don't use float as a primary method of aligning boxes.
+    3. CSS Flex Box
+        This should be the primary method.
+        Display: Flex
+        Flex-direction: row | column
+        Justify-co:central
+
+        Flex:1
+    */
+
+/* .main{
+    border:1px solid red;     */
+
+    /* for b. */
+    /* color:#fff; */
+    /* ends */
+
+    /* for c. ii. */
+    /* position:relative;
+}
+img{
+    position:relative;
+    bottom:100px;
+    right: 100px;
+    z-index:-999;
+} */
+
+/* img{
+    position:absolute;
+    bottom:100px;
+    right: 100px;
+    z-index:-999;
+} */
+
+/* .main{
+    height: 50vh;
+    border: 1px solid red;
+    position: relative;
+}
+
+.one{
+    background-color: green;
+    width:20%;
+    position:absolute;
+    height: 100%
+}
+
+.two{
+    background-color: yellow;
+    width:60%;
+    position:absolute;
+    left: 20%;
+    height: 100%;
+}
+
+.three{
+    background-color: red;
+    width:20%;
+    position:absolute;
+    left: 80%;
+    height: 100%
+} */
+
+/* img{
+    float:right;
+} */
+
+/*.main{
+    border:1px solid red;     */
+
+    /* for b. */
+    /* color:#fff; */
+    /* ends */
+
+    /* for c. ii. */
+    /* position:relative;
+}
+img{
+    position:relative;
+    bottom:100px;
+    right: 100px;
+    z-index:-999;
+} */
+
+/* img{
+    position:absolute;
+    bottom:100px;
+    right: 100px;
+    z-index:-999;
+} */
+
+/* .main{
+    height: 50vh;
+    border: 1px solid red;
+}
+
+.one{
+    background-color: green;
+    width:20%;
+    height: 100%;
+    float: left;
+}
+
+.two{
+    background-color: yellow;
+    width:60%;
+    height: 100%;
+    float: left;
+    /* clear: both; */
+/*}
+
+.three{
+    background-color: red;
+    width:20%;
+    height: 100%;
+    float: left;
+} */
+
+/* main{
+    height: 50vh;
+    display: flex;
+    border: 1px solid red; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+/* } */
+/* 
+.one{
+    background-color: green;
+    flex: 1;
+}
+
+.two{
+    background-color: yellow;
+    flex: 5;
+}
+
+.three{
+    background-color: red;
+    flex: 3;
+} */
+
+body{
+    background-color: black;
+}
+
+.menu{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+}
+
+.menu button{
+    color: white;
+    font-weight: bolder;
+    background-color: green;
+
+}
+
+.menu ul{
+    /* border:1px solid red;  */
+    padding-left: 0;
+    list-style-type: none;  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    margin: 0;
+    display: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    color: black ;
+}
+
+.menu ul li:hover{
+    background-color: black;
+}
+.menu ul a:hover{
+    color: white;
+}
+
+.menu:hover ul{
+    display: flex;
+}
+
+.proLi{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proLi .proUl{
+    position: absolute;
+    width: 110px;
+    top:0px;
+    left: 110px;
+    color: black;
+    visibility: hidden;
+}
+
+.proLi:hover .proUl{
+    visibility: visible;
+    
+}
+.proLi .proUl li a{
+    color: white;
+} 
+
+.menu li:hover a{
+    color: white;
+}
+

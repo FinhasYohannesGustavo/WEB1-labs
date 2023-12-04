@@ -30,7 +30,7 @@
                         <!-- Name and ID have the following importance
                             1. To uniquely identify the value inputted
                             2. Useful for styles
-                            3. To connet label with input (by giving the label and the input the same name) -->
+                            3. To connect label with input (by giving the label and the input the same name) -->
                         <input type="text" autofocus name = "lname" id = "lname" maxlength="10" readonly>
                     </td>
                 </tr>
@@ -46,9 +46,9 @@
                 
                     <td>
                         <select name="course" id = "course" > 
-                            <option value="English">English</option>
+                            <option  value="English">English</option>
                             <option selected value="Math">Maths</option>
-                            <option selected value="Physics">Physics</option>
+                            <option  value="Physics">Physics</option>
                         </select>
                     </td>
                     
@@ -62,13 +62,13 @@
                 </tr>
                 <tr align="left">
                     <td>
-                        <ol>
+                        <ul>
                             Male<input type="radio" name = "Gender" id = "Gender" value = "Male">
                             <br>
                             Female<input checked type="radio" name = "Gender" id = "Gender" value = "Female">
                             <br>
                             Other<input type="radio" name = "Gender" id = "Gender" value = "other">
-                        </ol>
+                        </ul>
                        
                     </td>
                 </tr>
@@ -118,7 +118,7 @@
                 <tr >
                     <td>
         
-                        <textarea name="Adress" id = "Adress" cols="30" rows="10"></textarea width="100%">
+                        <textarea name="Adress" id = "Adress" cols="40" rows="10"></textarea width="100%">
                     </td>
                 </tr>
 
@@ -140,8 +140,13 @@
                     </td>
                 </tr>
 
-                
+                <tr>
+
+                    <td>
+                        <input type="button" name="button" value="Submit">
+                    </td>
+                </tr>
         </table>
-    
+    </form>
 </body>
 </html>

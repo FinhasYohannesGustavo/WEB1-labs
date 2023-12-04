@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Form3</title>
+    <style>
+        input[type="email"]{
+            background-color: green;
+            width: 99%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
    <form action="" >
     
-    
-        <table>
+        <table style="border: 1px solid greenyellow;">
             <tr>
                 <td>
                     <label for="fname"> First Name</label>
@@ -152,11 +158,11 @@
                 </td>
                 <td>
                 <ul>
-                   <input type="checkbox" name = "drink" id = "drink" value = "Coffee">Computer Science</li> 
+                   <input type="checkbox" name = "drink" id = "drink" value = "Coffee">Computer Science
                    <br>
                    <input checked type="checkbox" name = "drink" id = "drink" value = "milk">Information Technology
                    <br> 
-                   <input type="checkbox" name = "drink" id = "drink" value = "tea">Tele communications</li> 
+                   <input type="checkbox" name = "drink" id = "drink" value = "tea">Tele communications
                 </ul>
                 </td>
             </tr>
@@ -177,7 +183,10 @@
                 <td>
                     <input type="hidden" name="hidden" value="1234455">
                 </td>
+                
             </tr>
+
+            
         </table>
 </body>
 </html>

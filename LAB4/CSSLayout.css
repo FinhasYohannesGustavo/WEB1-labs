@@ -152,7 +152,7 @@ img{
     flex: 3;
 } */
 
-body{
+/* body{
     background-color: black;
 }
 
@@ -171,7 +171,7 @@ body{
 }
 
 .menu ul{
-    /* border:1px solid red;  */
+    border:1px solid red; 
     padding-left: 0;
     list-style-type: none;  
     display: flex;
@@ -228,5 +228,54 @@ body{
 
 .menu li:hover a{
     color: white;
+} */
+
+body{
+    background-color: black;
 }
+
+.menu{
+    visibility: hidden;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    visibility: visible;
+}
+
+.menu:hover{
+    visibility: visible;
+}
+
+button{
+    background-color: green;
+}
+
+.proUl{
+    visibility: hidden;
+    display: flex;
+    justify-content: right;
+}
+
+.proLi{
+    display: flex;
+    justify-content: left;
+    
+}
+
+.proLi:hover .proUl{
+    visibility: visible;
+    flex-direction: column;
+    
+}
+img{
+    filter: invert();
+    flex-basis: 10px;
+}
+
 

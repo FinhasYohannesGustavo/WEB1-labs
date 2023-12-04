@@ -50,13 +50,13 @@ img{
     box-shadow: 4px 4px 8px #333; */
     background-size: 100px 100px;
     border-radius: 50%;
-    box-shadow: 20px 80px 40px black;
+    box-shadow: 0px 80px 40px black;
 }
 
 div.main{
 
     border:10px solid red;
-    margin: 10px;
+    margin: 20px;
     /* padding: 40px; */
     padding-top: 100px;
     padding-right: 100px;
@@ -65,8 +65,11 @@ div.main{
 }
 
 *{
-    /* This alters the width of the content */
-    box-sizing: border-box;
+    /* border box means the total width of the box includes
+    the padding and border values whilst content box does not include
+    the border and padding*/
+    box-sizing: content-box;
+    /* width: 100px; */
 }
 
 /* The space between the content and the border is Padding

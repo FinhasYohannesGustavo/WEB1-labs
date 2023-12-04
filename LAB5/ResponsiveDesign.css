@@ -1,0 +1,358 @@
+/* The minimum width of a mobile is 320px,
+of a tablet is 768px, of a desktop is 967px  */
+
+/* Always start with Mobile first design*/
+/* 
+body{
+    background-color: red;
+}
+@media(min-width: 768px){ */
+    /* Tablet */
+    /* body{
+        background-color: yellow;
+    }
+}
+
+@media(min-width: 900px){ */
+    /* Desktop */
+    /* body{
+        background-color: green;
+    }
+} */
+
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: 1px solid red;
+    gap: 10px;
+    padding: 10px;
+}
+
+.wrapper .blue{
+    flex: 2;
+}
+
+.wrapper .main{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main .green{
+    flex: 1;
+}
+
+.main section{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section .red{
+    flex: 1;
+}
+
+section .orange{
+    display: none;
+}
+
+@media(min-width: 600px) {
+
+    .wrapper .blue{
+        flex:1;
+    }
+    .wrapper .main{
+        flex: 5;
+    }
+
+    .main section{
+        display: flex;
+        flex-direction: row;    
+    }
+
+    section .red{
+        flex: 1;
+    }
+    section .orange{
+        display: block;
+        flex: 1;
+    }   
+}
+
+@media(min-width: 900px){
+    .wrapper .main{
+        flex-direction: row;
+
+    }
+    section .red{
+        flex: 2;
+    }
+    section .orange{
+        display: block;
+        flex: 1;
+    }
+
+    .main .green{
+        flex: 2
+    }
+
+} */
+
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.blue{
+    background-color: blue;
+    grid-area: blue;
+}
+
+.green{
+    background-color: green;
+    grid-area: green;
+}
+
+.red{
+    background-color: red;
+    grid-area: red;
+}
+
+.orange{
+    background-color: orange;
+    grid-area: orange;
+    display: none;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'blue'
+    'green'
+    'red';
+    gap: 10px;
+    padding: 10px;
+}
+
+@media(min-width: 600px) {
+    .wrapper{
+        grid-template-areas: 
+        'blue blue'
+        'green green'
+        'red orange';
+        grid-template-rows: 1fr 1fr 4fr;
+    }
+    .orange{
+        display: block;
+    }
+}
+
+@media(min-width: 900px) {
+    .wrapper{
+        grid-template-areas: 
+        'blue blue blue'
+        'green red orange';
+        grid-template-rows: 1fr 4fr;
+        grid-template-columns: 1fr 4fr 1fr;
+    }
+    .orange{
+        display: block;
+    }
+} */
+
+/* *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}  */
+
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+ 
+
+    grid-template-columns: repeat(20, 15px);
+    /* The repeat function allows us to set the 
+    number of rows without having to rewrite 100px 10
+    times */
+    grid-template-rows: repeat(20, 20px);
+    /* Grid gap sets the gap on the rows and the gaps
+    on the columns */
+    grid-gap: 10px 10px;
+    
+
+}
+
+
+/* grid-area: row-start / column-start / row-end / column-end */
+
+.item1{
+    background-color: #de0884;
+    grid-area: 1 / 2 / 3 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.item2{
+    background-color: white;
+    grid-area: 1 / 10 / 3 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item3{
+    background-color: yellow;
+    grid-area: 3 / 2  / 5 / 20; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item4{
+    background-color: #01a4cf;
+    grid-area: 5 / 2 / 10 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item5{
+    background-color: #01a4cf;
+    grid-area: 11 / 2 / 16 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item6{
+    background-color: #01a4cf;
+    grid-area: 17 / 2 / 21 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item7{
+    background-color: #01a4cf;
+    grid-area: 20 / 2 / 25 / 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item8{
+    display: none;
+    
+}
+
+
+
+
+
+@media (min-width: 900px) {
+    .wrapper{
+        height: 100vh;
+        display: grid;
+     
+    
+        grid-template-columns: repeat(20, 64px);
+        /* The repeat function allows us to set the 
+        number of rows without having to rewrite 100px 10
+        times */
+        grid-template-rows: repeat(20, 35px);
+        /* Grid gap sets the gap on the rows and the gaps
+        on the columns */
+        grid-gap: 10px 10px;
+        
+    
+    }
+    
+    
+    /* grid-area: row-start / column-start / row-end / column-end */
+    
+    .item1{
+        background-color: #de0884;
+        grid-area: 1 / 2 / 3 / 5;
+        
+      
+    }
+    
+    .item2{
+        background-color: white;
+        grid-area: 1 / 7 / 3 / 10;
+       
+    }
+    
+    .item3{
+        background-color: yellow;
+        grid-area: 1 / 12 / 3 / 20; 
+       
+    }
+    
+    .item4{
+        background-color: #01a4cf;
+        grid-area: 5 / 2 / 10 / 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .item5{
+        background-color: #01a4cf;
+        grid-area: 5 / 7 / 10 / 11;
+       
+    }
+    
+    .item6{
+        background-color: #01a4cf;
+        grid-area: 5 / 12 / 10 / 16;
+       
+    }
+    
+    .item7{
+        background-color: #01a4cf;
+        grid-area: 12 / 2 / 16 / 16;
+       
+    }
+    
+    .item8{
+        background-color: #36353a;
+        grid-area: 5 / 17 / 16 / 20;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+}

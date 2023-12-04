@@ -101,6 +101,7 @@ To handle conflicts (and also as a good designing principle):
     text-decoration :underline 10px #333;
     text-shadow: 4px -4px 8px red;
     text-transform:uppercase;
+    
     font-variant:small-caps;
     writing-mode: sideways-rl;
     font-family:Agbalumo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif'
@@ -279,20 +280,21 @@ it is not recommended that you use the important keyword */
     color: red !important;
 } */
 
-
+/* 
 p{
     color: blue;
-}
+    
+} */
 
 
 /* p#par{
     color: gold;
     background-color: green;
 } */
-#pseudoElements{
+/* #pseudoElements{
     color: red;
 }
 span{
     color: blueviolet;
-}
+} */
 

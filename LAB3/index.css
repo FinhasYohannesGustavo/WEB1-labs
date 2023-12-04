@@ -85,11 +85,11 @@ p[class$="o"]{
 
   /* The below is relative values and is great for smaller device screens */
   /* font-size: 1em; */
-  background-color: red;
-  width: 100vmin;
+  /* background-color: red;
+  width: 100vmin; */
   
 
   /* Using shorthand you can define multiple font attributes */
-  font: 100%/1.5 Georgia, "Times New Roman", Times, serif;
+  /* font: 100%/1.5 Georgia, "Times New Roman", Times, serif; */
 
 }

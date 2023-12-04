@@ -1,0 +1,149 @@
+.main h1{
+   border: 2px solid blue;
+  border-top-right-radius: 10px;
+  border-radius: 25px;
+  background-color: burlywood;
+  font-size: xx-large;
+  padding: 15px;
+}
+
+.top{
+    border:10px solid black;
+}
+.main{
+    border: solid rgb(0, 255, 179);
+}
+.inner{
+    padding-left: 300px;
+    border: 20px solid turquoise;
+}
+.main>h1{
+    padding-left: 100px;
+    border: dotted blueviolet;
+    /* If you set the position to absolute the other elemnts
+    within the document will ignore that element */
+    position: relative;
+    /* You can only use the left and right properties
+    if you have set position to relative */
+
+    right: 0px;
+    left:0px
+}
+
+/* img:hover{
+    border-radius: 50%;
+    filter: invert();
+    opacity: 0.6; */
+
+    /* The position fixed makes it so that this element
+    when it is being hovered on will stay fixed on the page
+    even if you scroll down */
+    /* position: fixed; */
+
+    /* This turns the image into the bakground instead  
+    of the foreground */
+    /* z-index: -20; */
+    
+/* } */
+
+/* img{
+    position: absolute;
+    z-index: 20;
+} */
+ul{
+    list-style-position: outside;
+    list-style-type:lower-roman;
+    /* list-style-image: url("sara.jpg"); */
+}
+
+ol{
+    list-style-type: katakana;
+    /* This turns the block element into an inline element */
+    display: inline;
+}
+
+table{
+    padding: 100px;
+    
+    
+    border: 1px solid purple;
+    size: 100px;
+    /* The border collapse makes it so that
+    the borders of the cells are collapsed into one 
+     */
+    border-collapse: collapse;
+}
+table tr td{
+    padding: 70px;
+    border: 1px dotted blue;
+}
+tr:nth-child(even){
+    background-color:lightgrey
+}
+tr:nth-child(1){
+    background-color: green;
+}
+
+.table{
+    padding-left: 400px;
+    /* The below makes the table hidden out of sight */
+    /* visibility: hidden; */
+}
+
+
+/* Creating a flag  using just position*/
+
+/* .green{
+    position:absolute;
+    background-color: green;
+    width: 33%;
+    display: inline;
+    
+}
+.yellow{
+    left: 33%;
+    position: absolute;
+    background-color: yellow;
+    width: 33%;
+    
+}
+
+.red{
+    left: 66%;
+    position: absolute;
+    background-color: red;
+    width: 33%;
+} */
+
+
+/* Creating a flag using float */
+/* Text and inline elements flow around the floated 
+ element:
+ When an element is floated, text and inline 
+ elements that come after it in the document 
+ flow will wrap around the floated element. 
+ This creates a layout where the floated element
+  appears to "float" within the text or content. */
+.green{
+    background-color: green;
+    width: 33.333%;
+    float: left;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 33.333%;
+    float: left;
+}
+
+.red{
+    background-color: red;
+    width: 33.333%;
+    float: left;
+}
+
+#float{
+    float: right;
+    border-radius: 20px;
+}
+

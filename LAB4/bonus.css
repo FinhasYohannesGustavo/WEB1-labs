@@ -1,18 +1,30 @@
-span:nth-child(2n+1){
+/* span:nth-child(2n+1){
     color: Red;
     font-size: x-large;
+} */
+/* Alternatively */
+
+p::before{
+    content: "Before";
+    color: red;
+    font-size: xx-large;
 }
 
+P::after{
+    content: "After";
+    font-size: xx-large;
+    color: red;
+}
 
 .table1 table tr:nth-child(3n+2){
     background-color: green;
 }
 
-.table2 table tr:nth-child(-n+3){
+.table2 table tr:nth-child(n+9){
     background-color: green;
 }
 
-.table2 table tr:nth-last-of-type(-n+3){
+.table2 table tr:nth-last-of-type(n+9){
     background-color: green;
 }
 
@@ -39,7 +51,7 @@ span:nth-child(2n+1){
     color: green;
 }
 
-.dynamic:hover{
+.dynamic:active{
     background-color: green;
 }
 .dynamic{

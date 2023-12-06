@@ -1,0 +1,339 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(45, 24px);
+    
+   
+}
+div[class^='i']{
+    display: none;
+}
+div.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #107e89;
+    grid-area: 2 / 2 / 6 / 20;
+}
+div.item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e3e3e3;
+    grid-area: 8 / 2 / 25 / 20;
+}
+
+div.item7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #ffda10;
+    grid-area: 27 / 2 / 31 / 20;
+}
+
+div.item11{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e3e3e3;
+    grid-area: 32 / 2 / 34 / 20;
+}
+
+div.item12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e3e3e3;
+    grid-area: 35 / 2 / 37 / 20;
+}
+
+@media (min-width: 800px) {
+    /* For tablet */
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(20, 38px);
+        grid-template-rows: repeat(45, 26px);
+    }
+
+    div.item1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #ff5b53;
+        grid-area: 2 / 2 / 5 / 5;
+    
+    }
+
+    div.item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        grid-area: 2 / 7 / 5 / 20;
+    
+    }
+
+    div.item3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        grid-area: 8 / 2 / 20 / 10;
+    
+    }
+
+    div.item4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+
+        grid-area: 8 / 12 / 20 / 20;
+    
+    }
+
+    div.item7{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #ffda10;
+        grid-area: 22 / 2 / 26 / 10;
+    }
+
+    div.item8{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #ffda10;
+        grid-area: 22 / 12 / 26 / 20;
+    }
+
+    div.item11{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 28 / 2 / 30 / 10;
+    }
+    
+    div.item12{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 28 / 12 / 30 / 20;
+    }
+
+    div.item13{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 32 / 2 / 34 / 10;
+    }
+    
+    div.item14{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 32 / 12 / 34 / 20;
+    }
+
+    div.item15{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 36 / 2 / 38 / 10;
+    }
+    
+    div.item16{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 36 / 12 / 38 / 20;
+    }
+
+    div.item17{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 40 / 2 / 42 / 10;
+    }
+    
+    div.item18{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #e3e3e3;
+        grid-area: 40 / 12 / 42 / 20;
+    }
+    
+}
+
+@media (min-width: 1920px) {
+    /* For full screen hd tv */
+    .wrapper{
+        display: grid;
+        grid-template-rows: repeat(25,42px);
+        grid-template-columns: repeat(45,42px);
+       
+        
+    }
+
+    div.item1{
+        background-color: #ff5b53;
+        grid-area: 2 / 4 / 5 / 16;
+    }
+
+    div.item2{
+        background-color: #107e89;
+        grid-area: 2 / 18 / 5 / 42;
+    }
+
+    div.item3{
+
+        grid-area: 6 / 4 / 12 / 12;
+    
+    }
+
+    div.item4{
+        
+        grid-area: 6 / 14 / 12 / 22;
+    
+    }
+
+    div.item5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+
+        grid-area: 6 / 24 / 12 / 32;
+    
+    }
+
+    div.item6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+
+        grid-area: 6 / 34 / 12 / 42;
+    
+    }
+
+    div.item7{
+        grid-area: 14 / 4 / 16 / 12;
+    }
+    
+    div.item8{
+
+        grid-area: 14 / 14 / 16 / 22;
+    }
+
+    div.item9{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #ffda10;
+        grid-area: 14 / 24 / 16 / 32;
+    }
+
+    div.item10{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        background-color: #ffda10;
+        grid-area: 14 / 34 / 16 / 42;
+    }
+
+    div.item11{
+ 
+        grid-area: 18 / 4 / 19 / 12;
+    }
+    
+    div.item12{
+        grid-area: 18 / 14 / 19 / 22;
+    }
+
+    div.item13{
+        grid-area: 18 / 24 / 19 / 32;
+    }
+    
+    div.item14{
+        grid-area: 18 / 34 / 19 / 42;
+    }
+
+    div.item15{
+ 
+        grid-area: 20 / 4 / 21 / 12;
+    }
+    
+    div.item16{
+        grid-area: 20 / 14 / 21 / 22;
+    }
+
+    div.item17{
+        grid-area: 20 / 24 / 21 / 32;
+    }
+    
+    div.item18{
+        grid-area: 20 / 34 / 21 / 42;
+    }
+
+   
+    div.item19{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+        grid-area: 22 / 4 / 23 / 12;
+    }
+    
+    div.item20{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+        grid-area: 22 / 14 / 23 / 22;
+    }
+
+    div.item21{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+        grid-area: 22 / 24 / 23 / 32;
+    }
+    
+    div.item22{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e3e3e3;
+        grid-area: 22 / 34 / 23 / 42;
+    }
+
+}

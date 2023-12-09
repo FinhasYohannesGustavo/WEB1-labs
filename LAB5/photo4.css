@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.item1{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 25px;
+    background-color: #107e89;
+    grid-area: a;
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 25px;
+    background-color: #ca319d;
+    grid-area: b;
+}
+.item3{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    font-size: 30px;
+    background-color: #ed6f63;
+    grid-area: c;
+}
+.item4{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #efc437;
+    grid-area: d;
+}
+.item5{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #538c45;
+    grid-area: e;
+}
+.item6{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #267d87;
+    grid-area: f;
+}
+.item7{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #799a29 ;
+    grid-area: g;
+}
+.item8{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #478755;
+    grid-area: h;
+}
+.item9{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #2fc9c1;
+    grid-area: i;
+}
+.item10{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #31c990;
+    grid-area: j;
+}
+.item11{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #534078;
+    grid-area: k;
+}
+.item12{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background-color: #dd212f;
+    grid-area: l;
+}
+
+.wrapper{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'a b b c d'
+    'e b b c f'
+    'g h i c j'
+    'k k k c l';
+    grid-template-columns: 2fr 1fr 2fr 3fr 2fr;   
+    gap: 5px;
+}
+

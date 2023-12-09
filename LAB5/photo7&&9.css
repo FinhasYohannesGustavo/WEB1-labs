@@ -1,0 +1,210 @@
+@media (min-width: 800px) {
+
+}
+
+@media (min-width: 1200px) {
+    *{
+        padding: 0;
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+
+    .item1{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 25px;
+        background-color: #10172a;
+        grid-area: a;
+    }
+    .item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 25px;
+        background-color: #ee3d4f;
+        grid-area: b;
+    }
+    .item3{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 30px;
+        background-color: #4c86c6;
+        grid-area: c;
+    }
+    .item4{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #24344b;
+        grid-area: d;
+    }
+    .item5{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #ffffff;
+        grid-area: e;
+    }
+    .item6{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #c1e4e8;
+        grid-area: f;
+    }
+    .item7{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color:  #4dbd97;
+        grid-area: g;
+    }
+    .item8{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #fed269;
+        grid-area: h;
+    }
+
+
+    .wrapper{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        'a b b b'
+        'c c c c'
+        'd d e f'
+        'd d e g'
+        'h h h h';
+        /*   */
+        grid-template-rows: 1fr 5fr 2fr 2fr 2fr;  
+        /* gap: 5px; */
+    }
+
+
+
+
+}
+
+@media (min-width: 1920px) {
+ *{
+        padding: 0;
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+        /* color: white; */
+        font-weight: bold;
+    }
+    
+
+
+    aside{
+        color:#9e4a4a;
+        font-size: 40px;
+    }
+    .item1{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 30px;
+        background-color: white;
+        grid-area: a;
+        color: #9e4a4a;
+    }
+    .item2{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 25px;
+        background-color: #9e4a4a;
+        grid-area: b;
+    }
+    .item3{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        font-size: 30px;
+        background-color: #9e4a4a;
+        grid-area: c;
+    }
+    .item4{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: d;
+    }
+    .item5{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: e;
+    }
+    .item6{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: f;
+    }
+    .item7{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color:  #9e4a4a;
+        grid-area: g;
+    }
+    .item8{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: h;
+    }
+
+    .item9{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: h;
+    }
+    .item10{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: i;
+    }
+    .item11{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background-color: #9e4a4a;
+        grid-area: j;
+    }
+
+    .wrapper{
+        height: 100vh;
+        display: grid;
+        grid-template-areas: 
+        'a b b'
+        'c c d'
+        'e f g'
+        'h i j';
+        
+        grid-template-rows: 1fr 5fr 2fr 2fr;  
+        gap: 15px; 
+        padding: 0px 400px;
+    }
+}
+
+
+ 
+
+

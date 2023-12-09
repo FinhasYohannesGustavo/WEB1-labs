@@ -113,3 +113,157 @@ for(var q1=10;q1>0;q1--){
     
 }
 
+
+
+// Functions
+
+
+// parameterized function
+function names1(a, b){
+    let num=0;
+    for(let i=0; i<arguments.length;i++){
+        num+=arguments[i];
+        
+   }
+    return num/arguments.length;
+}
+
+console.log(names(2,3,4,5));
+
+
+// You can use rest parameters to use array functions
+function names(...param){
+    let num=0;
+    param.push(8)
+    for(let i=0; i<param;i++){
+        num+=param[i];
+        
+   }
+   console.log(param)
+    return num/arguments.length;
+}
+
+console.log(names1(2,3,4,5));
+
+// Anonymous functions(functions without a name). These functions are not hoisted
+
+var sum=function(a,b){
+    return a+b;
+}
+console.log(sum(2,3));
+
+//Arrow functions or Lambda functions
+var sum=(a,b)=>a+b
+console.log(sum(2,7));
+
+
+//Even or Odd questions with arrow and anonymous functions
+//ARROW...
+var even=(a)=>a%2==0?'even':'odd';
+console.log(even(20))
+//ANONOYMOUS...
+var even=function(a){
+    return a%2==0?'even' : 'odd';
+}
+console.log(even("556"))
+
+
+//Output the maximum number from function arguments
+var max = function(){
+    maxNum=arguments[0];
+    for(var i =0; i<arguments.length;i++){
+        if(arguments[i]>maxNum){
+            maxNum=arguments[i];
+        }
+    }
+    return maxNum;
+}
+console.log(max(10,20,-5,90,150,23));
+
+//Function expressions are not hoisted while function declarations are hoisted
+//If you use the keyword var to create a function it is a function expression
+//If you use the keyword 'function' to create a function, it is a function declaration
+// Callback Function is a function that can be passed as an argument to another fucntion
+function firstNames(a){
+    return 'your first name is ' + a;
+}
+function fullName(a, b, callback){
+    return callback(a) + ' ' + b;
+}
+console.log(fullName('abebe', 'kebede', firstNames));
+
+
+function add(a, b){
+    return a+b;
+}
+function avg(a, b, callback){
+    return callback(a,b)/2;
+}
+console.log(avg(2, 4, add));
+
+
+function addCalc(a,b){
+    return a+b;
+}
+
+function subCalc(a ,b){
+    return a-b;
+}
+
+function mulCalc(a,b){
+    return a*b;
+}
+
+function calc(a, b, callback){
+    return callback(a,b);
+}
+
+console.log(calc(10,5,mulCalc));
+console.log(calc(10,6,(a,b)=>a-b));
+
+
+//Function constructor
+// there needs to be three parameters and the last parameter is the return statement
+var sum=new Function('a', 'b', 'return a+b')
+console.log(sum(2, 30));
+
+//Objects have two things: properties and methods
+//Person
+//  P-name
+//  P-age
+//  P-gender
+//  M-fullName()
+
+//IS MERELY USED FOR DEMONSTRATION AND IS NOT SUPPOSED TO REPRESENT THE REAL WORLD
+//A CHAIR DOES NOT HAVE A METHOD or A BEHAVIOR 
+//Chair
+//  P-color
+//  P-material
+//  P-price
+//  P-width
+//  P-length
+//  P-area()
+
+
+//Object Initialization
+var Person={
+    name:'Abebe',
+    age: 90,
+    gender: 'male',
+    fullName: function(){
+        return this.name
+    }
+}
+console.log(Person.age);
+
+var Chair={
+    color: 'Red',
+    width: 8,
+    length: 9,
+    price: '$50',
+    material: 'Ebony Wood', 
+    area: function(){
+        return (this.width*this.length)/2;
+    }
+}
+console.log(Chair.area());

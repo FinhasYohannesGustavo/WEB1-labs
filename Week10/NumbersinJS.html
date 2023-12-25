@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p> First Paragraph<a href=""> HTML Link</a></p>
+        <p>Second Paragraph</p>
+    </div>
+</body>
+<script src = 'NumbersinJS.js'></script>
+</html>
+
+<!--ELEMENT TREE 
+body
+    |__div
+        |__p
+            |__a
+        |__p
+
+        var p = document.body.firstElementChild.lastElementChild to target the second paragraph
+        p.textContent = 'new Prop'
+        p.innerHTML = 'new Prop'
+ -->
+
+ <!-- NODE TREE 
+body
+    |__>text
+    |__>div
+        |__>text
+        |__>p
+            |__>text
+            |__>a
+            |__>text
+        |__>text
+        |__>p
+        |__>text
+    |__>text
+
+var p = document.body.firstChild.nextSibling.lastChild.PreviousSibling to target the second paragraph
+
+-->

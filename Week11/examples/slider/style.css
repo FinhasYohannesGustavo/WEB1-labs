@@ -1,0 +1,220 @@
+
+:root{
+    --primary:#706671;
+    --dark:#333;
+
+    --light:#f1f1f1;
+}
+
+/* basic style  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Footlight MT Light";
+
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+.logo{grid-area:logo}
+.nav{grid-area:nav}
+
+/* basic style end  */
+/* top div starts here */
+.top
+{
+padding-top:10px;
+text-align: center;
+position: fixed;
+background-color: #33373a;
+color:#fff;
+width:100%;
+
+box-shadow: 4px 4px 8px #333;
+
+
+z-index: 1;
+
+}
+.logo h2
+{
+    font-family: "Edwardian Script ITC";
+    font-size:35px;
+}
+.nav
+{
+    margin-top: 5px;
+}
+.menu a{
+ 
+    text-decoration: none;
+    color: #fff;
+    font-variant: small-caps;
+    font-weight: 500;
+    padding: 8px 8px;
+    letter-spacing: 2px;
+    display: inline-block;
+    border-left:1px solid #fff;
+   
+
+}
+.menu a:hover
+{
+background-color: #fff;
+color:#333;
+
+
+}
+a.drop{
+    position: relative;
+}
+.link{
+    list-style-type: none;
+    position: absolute;
+    display: block;
+ width: 120px;
+right: 0;
+  
+
+  
+   background-color: #333;
+text-align: center;
+
+}
+.link li a{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+
+}
+.title
+{
+height: 100vh;
+text-align:center;
+background-color: #706671;
+background-image: url(images/1.jpg);
+background-size: 100% 100%;
+color:#fff;
+padding-top:200px; 
+
+
+}
+.title h1{
+    font-size: 5vw;
+    position: relative;
+    top:15px;
+    opacity: 1;
+   
+  
+   
+}
+.bu{
+    z-index: 1;
+    position: relative;
+    font-size: 50px;
+    background-color: transparent;
+    color:#fff;
+    border: none;
+    opacity: 0.7;
+
+   
+   
+    text-decoration: none;
+    transition: background-color .3s;
+   
+  
+
+}
+.bu:hover{
+    background-color:#333;
+    color:#fff;
+    cursor: pointer;
+}
+ .pre
+{
+float:left;
+}
+.next
+{
+float:right;
+}
+.slider
+    {
+       display: none; 
+    }
+.slider
+{
+    background-color: #33373a;
+    margin-top:0px;
+   height: 20vh;
+    text-align: center;
+    box-shadow: -4px -9px 15px #333;
+
+}
+.slider img{
+ display: inline-block;
+ max-width: 100%;
+
+border: 5px solid #fff;
+ margin-top:15px;
+
+
+}
+.slider img:hover{
+    opacity: 0.2;
+cursor: pointer;
+
+
+}
+.footer
+{
+    clear: both;
+}
+
+@media (min-width:800px)
+{
+    .title
+{
+height: 80vh;
+}
+    .slider
+    {
+       display: block; 
+    }
+
+.logo{
+    float:left;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.nav{
+    float:right;
+}
+.logo h2{
+    text-align: left;
+
+}
+nav .menu{
+    text-align: right;
+}
+.title
+{
+    clear: both;
+}
+
+
+}
+
+
+
+/* top end  */
+
+
+
+
+

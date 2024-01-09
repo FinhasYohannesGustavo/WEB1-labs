@@ -35,8 +35,14 @@ console.log(T);
 // Create an array of even numbers from num array 
 // Create an array of odd nummbers from num array
 
-// numsOdd= nums3.forEach(a=>!(a%2==0));
-// numsEven = nums3.forEach(a=>a%2==0);
+var numsOdd= [];
+numsEven = [];
+nums3.forEach(a=>!(a%2==0)?numsOdd.push(a):numsEven.push(a));
+// numsEven= nums3.filter(a=>a%2==0);
+// numsOdd = nums3.map(a=>a%2!=0?a:'');
+
+console.log(numsOdd);
+console.log(numsEven);
 
 var oddAdd=0;
 var evenAdd=0;
@@ -52,11 +58,17 @@ console.log(arr.indexOf(2,2));
 console.log(arr.indexOf(2));
 
 console.log(arr.lastIndexOf(2));
+console.log(arr.lastIndexOf(2,8));
+console.log(arr.lastIndexOf(2,4));
+
 
 
 // Join(converts arrays to strings using a character that you give it)
-var x = nums.join('$')
+var x = arr.join('$')
 console.log(x)
+var arr300=[];
+arr300=x.split('$');
+console.log(arr300);
 
 var Samparray = ["Red", "Green", "White", "Black",]
 var colors = Samparray.join(',')
@@ -66,6 +78,28 @@ var colors3 = Samparray.join('+')
 console.log(colors)
 console.log(colors2)
 console.log(colors3)
+
+// Shifts removes the first occurence and returns it from the array     
+console.log(Samparray.shift());
+
+
+console.log(Samparray);
+
+// unshift does the opposite
+console.log(Samparray.unshift('red'))
+console.log(Samparray);
+
+// The reverse function reverses the array permanenetly
+
+Samparray.reverse();
+
+console.log(Samparray);
+
+var num =[1,2,3,4,5,6,7,8,9];
+var accumulator=100;
+var reduced = num.reduce((accumulator,b)=>accumulator+b);
+console.log(reduced)
+
 
 // Map takes call back function and returns an array true or false
 
@@ -85,6 +119,8 @@ console.table(Person);
 // Create a new array containing of persons names who earn above 2000
 let highEarningPersons = Person.filter(a=>a.salary>2000);
 var richPeople =[];
+// var PersonSortedDesc= Person.forEach(a=>((a.salary,b.salary)=>a+b));
+console.log(PersonSortedDesc);
 
 console.log(highEarningPersons);
 Person.filter(a=>a.salary>2000?richPeople.push(a.name):"");

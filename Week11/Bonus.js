@@ -21,8 +21,9 @@ var library = [
 
     var PersonsWithM=[];
     // sort the above array object based on the price asc
-   library= library.sort((a,b)=>a.price-b.price);
-   console.log(library)
+   library.sort((a,b)=>a.price-b.price);
+   var price =library.map(a=> a.author +' '+ a.price );
+   console.log(price);
     
     
 // Create a new array consisting of book titles only
@@ -30,16 +31,26 @@ var bookNamesOnly=[];
 library.filter(n=>bookNamesOnly.push(n.title));
 console.log(bookNamesOnly);
 
-// Calculate the total sum of books
+var bookNamesOnly2 = library.map(a=>a.title);
+console.log(bookNamesOnly2);
+
+// Calculate the total sum of book prices
 var sum=0;
 library.filter(n=>sum+=n.price);
 console.log(sum);
+
+var sum2 =0;
+library.forEach(a=>sum2+=a.price);
+console.log(sum2);
 
 // find and replace the word “the” to “A” and create a new array consisting of book titles only?
 var bookNamesWithA=[];
 library.filter(n=>bookNamesWithA.push(n.title.replace('The','A')));
 console.log(bookNamesWithA);
 
+varNewArray= library.filter(a=>a.title.search("The")!=-1);
+var booksWithTester =varNewArray.map(a=>{a.title=a.title.replace('The','Tester');return a});
+console.log(booksWithTester.map(a=>a.title));
 // •	Write a JavaScript function to format a number up to specified decimal places
 function decimals(a, b){
    

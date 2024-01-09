@@ -1,20 +1,23 @@
 console.log("Testing the console");
-document.write("Finhas Yohannes Gustavo");
+// document.write("Finhas Yohannes Gustavo");
 var name = 'Abebe Bekele'
 let num = 900;
 // let num = 900; with java script you can not define the same variable with the same value
+// console.log(x); this does not give any errors but shows undefined because variables created with
+// var are hoisted
 var x = 10;
 var x =20;
-// console.log(name, num, num,x);
+console.log(name, num, num,x);
 
 // Let is block scoped
-
+// console.log(y) this doesnt work because variables created with let are not hoisted
 let y= 10;
 
 {
     let y=90; 
-    // 
+    // this is allowed 
 }
+// let y =30; not allowed 
 
 console.log("let doesnt affect the block value",y);
 
@@ -47,7 +50,7 @@ var lastName='Gustavo';
 
 console.log("My full name is with + concatination:",firstName+middleName+lastName);
 
-console.log("My full name is:",firstName,middleName,lastName);
+console.log("My full name is with ',' concatination:",firstName,middleName,lastName);
 
 var length=50;
 var width=80;
@@ -58,7 +61,7 @@ console.log("The area of the triangle is: ",area);
 // ES6 template literals
 console.log(`The area is ${area} this is using back tick ES6 `);
 
-document.write(`<div> <h2> test <h2>`);
+// document.write(`<div> <h2> test <h2>`);
 
 // for(var i =1;i<100;i++){
     
@@ -94,32 +97,25 @@ document.write(`<div> <h2> test <h2>`);
 
 // var ans=(ternary>=1&&ternary<=10?(ternary%2==0?'even':'odd'):ternary>=10&&ternary<=20?(terany%2==0?'even':'odd'):'not valid');
 
-for(var q1=1;q1<10;q1++){
-    document.write(`<br>`);
-    for(var q2=q1;q2>0;q2--){
-        document.write('x');
-    }
-    
-}
+let comp="122";
+let numsd=122;
 
-document.write(`<br>`);
-document.write(`<br>`);
+var booleans= true;
+var bools = "true";
 
-for(var q1=10;q1>0;q1--){
-    document.write(`<br>`);
-    for(var q2=q1;q2>0;q2--){
-        document.write('x');
-    }
-    
-}
+// Double equals does type conversion whilst triple equals(strict equality does not)
+console.log(comp==numsd)
+console.log(bools==booleans)
 
 
+
+console.log(comp===numsd)
 
 // Functions
-
+console.log(average(2,4,10,5))
 
 // parameterized function
-function names1(a, b){
+function average(a, b){
     let num=0;
     for(let i=0; i<arguments.length;i++){
         num+=arguments[i];
@@ -128,22 +124,32 @@ function names1(a, b){
     return num/arguments.length;
 }
 
-console.log(names(2,3,4,5));
+// console.log(sums(10,20))
+// Arrow function
+var sums=(a,b)=>{return a+b};
+console.log(sums(10,20));
+
+// Anonymous function as well as arrow functions are not hoisted
+var sums2 = function(a,b)
+{return a+b};
+console.log(sums2(10,20));
 
 
 // You can use rest parameters to use array functions
-function names(...param){
+function paramAverage(...params){
     let num=0;
-    param.push(8)
-    for(let i=0; i<param;i++){
-        num+=param[i];
-        
+    params.push(8)
+    
+    for(let i=0; i<params.length;i++){
+        num+=params[i];        
    }
-   console.log(param)
-    return num/arguments.length;
+  
+    return num/params.length;
 }
 
-console.log(names1(2,3,4,5));
+console.log(paramAverage(2,3,4,5));
+
+console.log(average(2,3,4,5));
 
 // Anonymous functions(functions without a name). These functions are not hoisted
 
@@ -188,7 +194,7 @@ function firstNames(a){
     return 'your first name is ' + a;
 }
 function fullName(a, b, callback){
-    return callback(a) + ' ' + b;
+    return callback(a) + ' and last name is ' + b;
 }
 console.log(fullName('abebe', 'kebede', firstNames));
 
@@ -221,11 +227,24 @@ function calc(a, b, callback){
 console.log(calc(10,5,mulCalc));
 console.log(calc(10,6,(a,b)=>a-b));
 
+// function adds(a,b){
+//     return a+b;
+// }
+// function subs(a,b){
+//     return a-b;
+// }
+
+// function calcs(a,b,func){
+//     return func(a,b);
+// }
+// console.log(calcs(10,20,adds))
 
 //Function constructor
 // there needs to be three parameters and the last parameter is the return statement
 var sum=new Function('a', 'b', 'return a+b')
 console.log(sum(2, 30));
+
+
 
 //Objects have two things: properties and methods
 //Person
@@ -254,6 +273,17 @@ var Person={
         return this.name
     }
 }
+
+var me={
+    age:24,
+    height:1.73,
+    firstName:'finhas',
+    lastName:'Gustavo',
+    fullName:()=>firstName+' '+lastName
+
+}
+console.log(me.fullName());
+console.log(me.age)
 console.log(Person.age);
 
 var Chair={
@@ -267,3 +297,33 @@ var Chair={
     }
 }
 console.log(Chair.area());
+
+var bestSubject = new Object();
+bestSubject.name='maths';
+bestSubject.grade='A'
+bestSubject.teacher='Paul';
+bestSubject.full=()=>bestSubject.grade+' '+bestSubject.teacher;
+
+console.log(bestSubject.full()); 
+
+
+for(var q1=1;q1<10;q1++){
+    document.write(`<br>`);
+    for(var q2=q1;q2>0;q2--){
+        document.write('x');
+    }
+    
+}
+
+document.write(`<br>`);
+document.write(`<br>`);
+
+for(var q1=10;q1>0;q1--){
+    document.write(`<br>`);
+    for(var q2=q1;q2>0;q2--){
+        document.write('x');
+    }
+    
+}
+
+

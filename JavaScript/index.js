@@ -307,6 +307,8 @@ bestSubject.full=()=>bestSubject.grade+' '+bestSubject.teacher;
 console.log(bestSubject.full()); 
 
 
+
+
 for(var q1=1;q1<10;q1++){
     document.write(`<br>`);
     for(var q2=q1;q2>0;q2--){
@@ -325,5 +327,7 @@ for(var q1=10;q1>0;q1--){
     }
     
 }
+
+
 
 

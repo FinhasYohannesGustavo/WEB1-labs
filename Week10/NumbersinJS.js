@@ -80,3 +80,16 @@ var div2=document.body.firstChild.nextSibling
 var titleNode = div2.parentNode.previousSibling.previousSibling.lastChild.previousSibling;
 titleNode.textContent='With node';
 
+
+var div3 = document.body.firstChild.nextSibling;
+var titleNode3= div3.firstChild.nextSibling;
+titleNode3.textContent='finhas is the bomb';
+ 
+var test = document.getElementsByName("test");
+(test).forEach(element => {
+    element.textContent='we da best'
+});
+
+var test2 = document.getElementById('tester');
+test2.textContent='We are the best?';
+

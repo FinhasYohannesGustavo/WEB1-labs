@@ -96,10 +96,16 @@ Samparray.reverse();
 console.log(Samparray);
 
 var num =[1,2,3,4,5,6,7,8,9];
-var accumulator=100;
-var reduced = num.reduce((accumulator,b)=>accumulator+b);
+var reduced = num.reduce((accumulator,b)=>accumulator-b);
 console.log(reduced)
 
+var numsSorted = num.sort((a,b)=>(a%2)-(b%2)||a-b);
+console.log(numsSorted);
+
+//Find function returns the first element matching the condition
+var evensNm= num.find(a=>a%2==0);
+console.log(evensNm);
+console.log(num.findIndex(a=>a%2==0));
 
 // Map takes call back function and returns an array true or false
 
@@ -116,10 +122,13 @@ var Person=[
 ]
 
 console.table(Person);
+
 // Create a new array containing of persons names who earn above 2000
 let highEarningPersons = Person.filter(a=>a.salary>2000);
 var richPeople =[];
-// var PersonSortedDesc= Person.forEach(a=>((a.salary,b.salary)=>a+b));
+var PersonSortedDesc=[];
+Person.sort((a,b)=> b.salary-a.salary);
+console.log(Person.forEach(a=>PersonSortedDesc.push(a.salary)));
 console.log(PersonSortedDesc);
 
 console.log(highEarningPersons);

@@ -125,6 +125,7 @@ var obj={
     test:'test'
 }
 
+
 // We are assigning the following variables the values of the object objs attributes
 var {names:namesNew,age:ageVarNew,test:testVarNew}=obj;
 
@@ -135,7 +136,6 @@ var obj2={color:'blue'}
 var obj3={width:200}
 var obj4 = Object.assign(obj,obj2,obj3)
 console.log(obj4)
-
 
 // deleting object properties
 

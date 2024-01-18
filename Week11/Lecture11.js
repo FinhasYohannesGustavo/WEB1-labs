@@ -39,7 +39,7 @@
 //document.querySelectorAll()
 
 var div = document.getElementById('div')
-div.style.backgroundColor = 'black';
+div.style.backgroundColor = 'green';
 div.style.color = '#fff'
 
 
@@ -127,8 +127,9 @@ childs.style.height = '50%'
 childs.style.border = '10px solid green'
 // parent.style.display='flex';
 // parent.style.justify-content='center';
-childs.addEventListener('mouseover',(e)=>e.stopPropagation(alert('child')));
+childs.addEventListener('click',(e)=>e.stopPropagation(alert('child')));
 parent.addEventListener('click',()=>alert('parent'));
 body.addEventListener('click',()=>alert('body'));
+
 
 
